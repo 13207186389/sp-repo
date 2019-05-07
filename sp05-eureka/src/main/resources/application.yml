@@ -24,7 +24,7 @@ server:
   
 eureka:
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: true 
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:PY
   client:
     service-url:
