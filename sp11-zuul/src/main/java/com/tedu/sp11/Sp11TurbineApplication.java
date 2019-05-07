@@ -1,0 +1,18 @@
+package com.tedu.sp11;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+
+
+@EnableZuulProxy
+@EnableDiscoveryClient
+@SpringBootApplication
+public class Sp11TurbineApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Sp11TurbineApplication.class, args);
+	}
+
+}
